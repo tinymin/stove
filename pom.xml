@@ -15,7 +15,6 @@
             <url>http://maven.springframework.org/release</url>
         </repository>
     </repositories>
-
     <dependencies>
         <dependency>
             <groupId>javax.servlet.jsp</groupId>
