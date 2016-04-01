@@ -67,4 +67,59 @@ public class StoreDao
 
         return results.isEmpty() ? null : results;
     }
+
+    public List<StoreInfo> select(List<String> storeList)
+    {
+        StringBuilder searchStores = new StringBuilder();
+
+        for (String item : storeList)
+        {
+            if (0 < searchStores.length())
+                searchStores.append(", ");
+
+            searchStores.append("'" + item.trim() + "'");
+        }
+
+        String qry = "SELECT si.NAME" +
+                     "     , si.FLOOR" +
+                     "     , si.TEL" +
+                     "     , di.NAME as DEP_NAME" +
+                     "     , di.BRANCH" +
+                     "     , di.BUSINESS_HOUR" +
+                     "     , di.ADDRESS" +
+                     "     , di.URL" +
+                     "  FROM STORE_INFO si, DEPSTORE_INFO di" +
+                     " WHERE si.DEP_ID = di.DEP_ID" +
+                     "   AND si.NAME IN (" + searchStores + ")" +
+                     "   AND di.DEP_ID IN (SELECT di.DEP_ID" +
+                     "                       FROM STORE_INFO si, DEPSTORE_INFO di" +
+                     "                      WHERE si.DEP_ID = di.DEP_ID" +
+                     "                        AND si.NAME IN (" + searchStores + ")" +
+                     "                      GROUP BY di.NAME, di.BRANCH" +
+                     "                     HAVING count(si.NAME) = " + storeList.size() + ")";
+
+        List<StoreInfo> results = jdbcTemplate.query(
+              qry
+            , new RowMapper<StoreInfo>() {
+                @Override
+                public StoreInfo mapRow(ResultSet resultSet, int i) throws SQLException
+                {
+                    StoreInfo storeInfo = new StoreInfo(
+                              resultSet.getString("NAME")
+                            , resultSet.getString("FLOOR")
+                            , resultSet.getString("TEL")
+                            , resultSet.getString("DEP_NAME")
+                            , resultSet.getString("BRANCH")
+                            , resultSet.getString("BUSINESS_HOUR")
+                            , resultSet.getString("ADDRESS")
+                            , resultSet.getString("URL")
+                    );
+
+                    return storeInfo;
+                }
+            }
+        );
+
+        return results.isEmpty() ? null : results;
+    }
 }

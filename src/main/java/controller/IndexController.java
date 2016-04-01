@@ -2,6 +2,7 @@ package controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
  * Created with IntelliJ IDEA.
@@ -13,8 +14,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class IndexController
 {
-    @RequestMapping("index")
-    public String index()
+    @RequestMapping(value = "index.do", method = RequestMethod.GET)
+    public String indexGet()
+    {
+        return "/index";
+    }
+
+    @RequestMapping(value = "index.do", method = RequestMethod.POST)
+    public String indexPost()
     {
         return "/index";
     }

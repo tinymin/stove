@@ -6,6 +6,7 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Collection;
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -21,13 +22,13 @@ public class StoreService
     @Autowired
     private StoreDao storeDao;
 
-//    public StoreService(StoreDao storeDao)
-//    {
-//        this.storeDao = storeDao;
-//    }
-
     public Collection<StoreInfo> selectAllStore()
     {
         return storeDao.selectAll();
+    }
+
+    public Collection<StoreInfo> select(List<String> storeList)
+    {
+        return storeDao.select(storeList);
     }
 }
