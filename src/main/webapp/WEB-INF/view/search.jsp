@@ -30,7 +30,7 @@
     </div>
 
     <div class="form-group" style="width:90%;">
-        <form:form action="search" method="GET" commandName="searchRequest">
+        <form:form action="search" method="POST" commandName="searchRequest">
             <input type="text" name="searchVal" id="searchVal" value="${searchRequest.searchStores}" class="form-control" placeholder="예) 구지, 디파니, 누이빈통, 록시땡" style="width:85%;">
             <input type="submit" class="btn btn-danger" value="Search" />
         </form:form>
