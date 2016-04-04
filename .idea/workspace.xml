@@ -9,8 +9,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d1d84457-deb0-4099-ae48-86afadd6c536" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dao/StoreDao.java" afterPath="$PROJECT_DIR$/src/main/java/dao/StoreDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/search.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/search.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stove.iws" />
@@ -25,8 +23,8 @@
     <file path="/StoreController.java" changelist="d1d84457-deb0-4099-ae48-86afadd6c536" time="1459657954689" ignored="false" />
     <file path="/StoreService.java" changelist="d1d84457-deb0-4099-ae48-86afadd6c536" time="1459405994271" ignored="false" />
     <file path="/member-context.xml" changelist="d1d84457-deb0-4099-ae48-86afadd6c536" time="1459388911645" ignored="false" />
-    <file path="/StoreDao.java" changelist="d1d84457-deb0-4099-ae48-86afadd6c536" time="1459497433186" ignored="false" />
-    <file path="/Dummy.txt" changelist="d1d84457-deb0-4099-ae48-86afadd6c536" time="1459657134003" ignored="false" />
+    <file path="/StoreDao.java" changelist="d1d84457-deb0-4099-ae48-86afadd6c536" time="1459759917029" ignored="false" />
+    <file path="/Dummy.txt" changelist="d1d84457-deb0-4099-ae48-86afadd6c536" time="1459758581991" ignored="false" />
     <file path="/dbinfo.properties" changelist="d1d84457-deb0-4099-ae48-86afadd6c536" time="1459491911212" ignored="false" />
     <file path="/IndexController.java" changelist="d1d84457-deb0-4099-ae48-86afadd6c536" time="1459494360031" ignored="false" />
     <file path="/index.jsp" changelist="d1d84457-deb0-4099-ae48-86afadd6c536" time="1459758235125" ignored="false" />
@@ -34,6 +32,7 @@
     <file path="/a.dummy" changelist="d1d84457-deb0-4099-ae48-86afadd6c536" time="1459495801712" ignored="false" />
     <file path="/fragment.java" changelist="d1d84457-deb0-4099-ae48-86afadd6c536" time="1459501545133" ignored="false" />
     <file path="/search.jsp" changelist="d1d84457-deb0-4099-ae48-86afadd6c536" time="1459756160664" ignored="false" />
+    <file path="/temp.py" changelist="d1d84457-deb0-4099-ae48-86afadd6c536" time="1459760565379" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +48,7 @@
   </component>
   <component name="DebuggerManager">
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/dao/StoreDao.java" line="103" class="dao.StoreDao" package="dao">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/dao/StoreDao.java" line="106" class="dao.StoreDao" package="dao">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -111,10 +110,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="search.jsp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="search.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/search.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="9" selection-start="1118" selection-end="1118" vertical-scroll-proportion="0.036319613">
+            <state line="39" column="0" selection-start="1715" selection-end="1715" vertical-scroll-proportion="-11.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StoreService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/service/StoreService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="21" selection-start="631" selection-end="641" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -132,7 +140,7 @@
       <file leaf-file-name="StoreDao.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/StoreDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="72" selection-start="3840" selection-end="3840" vertical-scroll-proportion="0.0">
+            <state line="78" column="0" selection-start="2559" selection-end="2559" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -140,10 +148,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="temp.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="temp.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/temp.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="62" selection-start="1301" selection-end="1301" vertical-scroll-proportion="-8.75">
+            <state line="22" column="41" selection-start="2054" selection-end="2054" vertical-scroll-proportion="-2.4230769">
               <folding />
             </state>
           </provider>
@@ -170,7 +178,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="143" selection-start="3180" selection-end="3180" vertical-scroll-proportion="0.0">
+            <state line="89" column="10" selection-start="3180" selection-end="3180" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -203,7 +211,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/mvc-context.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/properties/dbinfo.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/member-context.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/controller-context.xml" />
@@ -216,9 +223,10 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/controller/StoreController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/temp.html" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/StoreDao.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/search.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/StoreDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/temp.py" />
       </list>
     </option>
   </component>
@@ -947,7 +955,11 @@
       <created>1459503365130</created>
       <updated>1459503365130</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[stove 1.0.0.4]&#10;&#10;1. 같은 백화점, 같은 매장인데 다른 층에 있는 경우도 검색 결과로 나오는 경우가 있어 쿼리 수정&#10;검색어를 [지고트, 빈폴]로 입력함. 롯데백화점 영등포점에 빈폴이 다른 층애 2개 매장이 존재하였음. 검색 결과로 빈폴 영등포점이 포함됨. 이를 위해 쿼리 수정함&#10;&#10;2. jsp에 화면단 일부 수정&#10;&#10;">
+      <created>1459758592838</created>
+      <updated>1459758592838</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -965,7 +977,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2733142" sideWeight="0.2949438" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3272472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1025,7 +1037,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="[stove 1.0.0.3]&#10;&#10;search.jsp의 form을 POST로 변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="[stove 1.0.0.4]&#10;&#10;1. 같은 백화점, 같은 매장인데 다른 층에 있는 경우도 검색 결과로 나오는 경우가 있어 쿼리 수정&#10;검색어를 [지고트, 빈폴]로 입력함. 롯데백화점 영등포점에 빈폴이 다른 층애 2개 매장이 존재하였음. 검색 결과로 빈폴 영등포점이 포함됨. 이를 위해 쿼리 수정함&#10;&#10;2. jsp에 화면단 일부 수정&#10;&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1042,6 +1054,7 @@
     <MESSAGE value="1st commit" />
     <MESSAGE value="- 검색 쿼리 추가&#10;- 검색 기능 추가&#10;- 검색 페이지 추가" />
     <MESSAGE value="[stove 1.0.0.3]&#10;&#10;search.jsp의 form을 POST로 변경" />
+    <MESSAGE value="[stove 1.0.0.4]&#10;&#10;1. 같은 백화점, 같은 매장인데 다른 층에 있는 경우도 검색 결과로 나오는 경우가 있어 쿼리 수정&#10;검색어를 [지고트, 빈폴]로 입력함. 롯데백화점 영등포점에 빈폴이 다른 층애 2개 매장이 존재하였음. 검색 결과로 빈폴 영등포점이 포함됨. 이를 위해 쿼리 수정함&#10;&#10;2. jsp에 화면단 일부 수정&#10;&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1053,13 +1066,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/controller-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/dbinfo.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="56" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0" />
@@ -1094,16 +1100,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/StoreService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="21" selection-start="631" selection-end="641" vertical-scroll-proportion="0.70288247">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="143" selection-start="3180" selection-end="3180" vertical-scroll-proportion="0.0">
+        <state line="89" column="10" selection-start="3180" selection-end="3180" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1122,26 +1121,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/temp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="62" selection-start="1301" selection-end="1301" vertical-scroll-proportion="-8.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/domain/StoreInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="13" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/StoreDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="72" selection-start="3840" selection-end="3840" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1154,7 +1137,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/search.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="9" selection-start="1118" selection-end="1118" vertical-scroll-proportion="0.036319613">
+        <state line="39" column="0" selection-start="1715" selection-end="1715" vertical-scroll-proportion="-11.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/StoreService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="21" selection-start="631" selection-end="641" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/StoreDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="0" selection-start="2559" selection-end="2559" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/temp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="41" selection-start="2054" selection-end="2054" vertical-scroll-proportion="-2.4230769">
           <folding />
         </state>
       </provider>

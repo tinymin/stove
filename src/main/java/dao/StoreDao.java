@@ -72,13 +72,16 @@ public class StoreDao
     {
         StringBuilder searchStores = new StringBuilder();
 
+        searchStores.append("'");
         for (String item : storeList)
         {
-            if (0 < searchStores.length())
-                searchStores.append(", ");
+            searchStores.append(item.trim());
 
-            searchStores.append("'" + item.trim() + "'");
+            if (1 < storeList.size())
+                searchStores.append("|");
         }
+        searchStores.append("'");
+
 
         String qry = "SELECT si.NAME" +
                      "     , si.FLOOR" +
@@ -90,11 +93,11 @@ public class StoreDao
                      "     , di.URL" +
                      "  FROM STORE_INFO si, DEPSTORE_INFO di" +
                      " WHERE si.DEP_ID = di.DEP_ID" +
-                     "   AND si.NAME IN (" + searchStores + ")" +
+                     "   AND si.NAME REGEXP (" + searchStores + ")" +
                      "   AND di.DEP_ID IN (SELECT di.DEP_ID" +
                      "                       FROM STORE_INFO si, DEPSTORE_INFO di" +
                      "                      WHERE si.DEP_ID = di.DEP_ID" +
-                     "                        AND si.NAME IN (" + searchStores + ")" +
+                     "                        AND si.NAME REGEXP (" + searchStores + ")" +
                      "                      GROUP BY di.NAME, di.BRANCH" +
                      "                     HAVING count(si.NAME) = " + storeList.size() + ")" +
                      " GROUP BY si.NAME, di.NAME, di.BRANCH" +
