@@ -26,13 +26,14 @@
     <div class="container bs-docs-container">
         <div class="jumbotron">
             <h2>Stove</h2>
+            <h4>매장 검색</h4>
         </div>
 
-        <div class="form-group" style="width:90%;">
+        <div class="form-group">
             <form:form action="search" method="POST" commandName="searchRequest">
-                <label for="searchVal"></label>
-                <input type="text" name="searchVal" id="searchVal" class="form-control" placeholder="예) 구지, 디파니, 누이빈통, 록시땡" style="width:90%;">
-                <button type="submit" class="btn btn-danger">Search</button>
+                <label class="sr-only" for="searchVal">매장검색</label>
+                <input type="text" name="searchVal"  id="searchVal" value="${searchRequest.searchStores}" placeholder="검색 예시)   매장A, 매장B, 매장C" class="form-control">
+                <button type="submit" class="btn btn-success">Search</button>
             </form:form>
         </div>
     </div>

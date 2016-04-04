@@ -96,7 +96,10 @@ public class StoreDao
                      "                      WHERE si.DEP_ID = di.DEP_ID" +
                      "                        AND si.NAME IN (" + searchStores + ")" +
                      "                      GROUP BY di.NAME, di.BRANCH" +
-                     "                     HAVING count(si.NAME) = " + storeList.size() + ")";
+                     "                     HAVING count(si.NAME) = " + storeList.size() + ")" +
+                     " GROUP BY si.NAME, di.NAME, di.BRANCH" +
+                     " HAVING count(si.NAME) = 1" + // 한 백화점에 같은 매장이 다른 층에 있는 경우가 있어 추가함
+                     " ORDER BY di.DEP_ID";
 
         List<StoreInfo> results = jdbcTemplate.query(
               qry
