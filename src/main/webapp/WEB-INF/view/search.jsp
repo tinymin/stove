@@ -33,7 +33,7 @@
     <div class="form-group">
         <form:form action="search" method="POST" commandName="searchRequest">
             <label class="sr-only" for="searchVal">매장검색</label>
-            <input type="text" name="searchVal"  id="searchVal" value="${searchRequest.searchStores}" placeholder="검색 예시)   매장A, 매장B, 매장C" class="form-control">
+            <input type="text" name="searchVal"  id="searchVal" value="${searchStores}" placeholder="검색 예시)   매장A, 매장B, 매장C" class="form-control">
             <input type="submit" class="btn btn-success" value="Search" />
         </form:form>
     </div>
@@ -42,10 +42,10 @@
         <table class="table table-striped">
             <tr>
                 <th>매장명</th>
-                <th>층</th>
-                <th>전화번호</th>
                 <th>백화점</th>
                 <th>지점</th>
+                <th>층</th>
+                <th>전화번호</th>
                 <th>영업시간</th>
                 <th>주소</th>
                 <th>홈페이지</th>
@@ -53,10 +53,10 @@
             <c:forEach items="${searchResponse}" var="store" varStatus="status">
                 <tr>
                     <td>${store.storeName}</td>
-                    <td>${store.storeFloor}</td>
-                    <td>${store.storeTel}</td>
                     <td>${store.depStoreName}</td>
                     <td>${store.depStoreBranch}</td>
+                    <td>${store.storeFloor}</td>
+                    <td>${store.storeTel}</td>
                     <td>${store.depStoreBusinessHour}</td>
                     <td>${store.depStoreAddress}</td>
                     <td><a href="${store.depStoreSiteURL}" target="_blank">연결</a></td>

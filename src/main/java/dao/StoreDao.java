@@ -75,10 +75,10 @@ public class StoreDao
         searchStores.append("'");
         for (String item : storeList)
         {
-            searchStores.append(item.trim());
-
-            if (1 < storeList.size())
+            if (2 <= searchStores.length())
                 searchStores.append("|");
+
+            searchStores.append(item.trim());
         }
         searchStores.append("'");
 

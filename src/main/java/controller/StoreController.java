@@ -53,6 +53,7 @@ public class StoreController
 
         Collection<StoreInfo> searchResponse = storeService.select(searchStores);
 
+        model.addAttribute("searchStores", searchVal);
         model.addAttribute("searchResponse", searchResponse );
 
         return "search";
