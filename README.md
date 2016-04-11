@@ -20,3 +20,11 @@
 
 2. 1번이 싫다면 [ member-context.xml ]파일에서 dataSource 빈에 직접 JDBC 정보를 입력한다.
 
+
+서비스 주소
+http://tinymin.asuscomm.com:8080/stove/index.do
+
+
+현재 버그
+1. 매장 검색시 쿼리에서 like 검색을 하므로, 정확하게 원하는 매장이 안 나오는 경우가 있음.
+예를 들면, (빈폴, 지고트)로 검색하는 경우 결과 중에 (빈폴키즈, 빈폴골프)가 나오는 경우가 있음.
