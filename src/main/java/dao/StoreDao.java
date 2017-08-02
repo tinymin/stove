@@ -34,15 +34,15 @@ public class StoreDao
         // ORM 공부후 ORM으로 변경 필요
         List<StoreInfo> results = jdbcTemplate.query(
             "select si.NAME as STORE_NAME" +
-                    ", si.FLOOR as STORE_FLOOR" +
+                    ", si.LEVEL as STORE_LEVEL" +
                     ", si.TEL as STORE_TEL" +
                     ", di.NAME as DEP_NAME" +
                     ", di.BRANCH as DEP_BRANCH" +
                     ", di.BUSINESS_HOUR as DEP_BUSINESSHOUR" +
                     ", di.ADDRESS as DEP_ADDR" +
                     ", di.URL as DEP_URL" +
-                    " from STORE_INFO si" +
-                    ", DEPSTORE_INFO di" +
+                    " from STORE_INFO2 si" +
+                    ", DEPSTORE_INFO2 di" +
                     " where si.DEP_ID = di.DEP_ID;"
             , new RowMapper<StoreInfo>()
             {
@@ -51,7 +51,7 @@ public class StoreDao
                 {
                     StoreInfo storeInfo = new StoreInfo(
                              resultSet.getString("STORE_NAME")
-                            ,resultSet.getString("STORE_FLOOR")
+                            ,resultSet.getString("STORE_LEVEL")
                             ,resultSet.getString("STORE_TEL")
                             ,resultSet.getString("DEP_NAME")
                             ,resultSet.getString("DEP_BRANCH")
@@ -84,18 +84,18 @@ public class StoreDao
 
 
         String qry = "SELECT si.NAME" +
-                     "     , si.FLOOR" +
+                     "     , si.LEVEL" +
                      "     , si.TEL" +
                      "     , di.NAME as DEP_NAME" +
                      "     , di.BRANCH" +
                      "     , di.BUSINESS_HOUR" +
                      "     , di.ADDRESS" +
                      "     , di.URL" +
-                     "  FROM STORE_INFO si, DEPSTORE_INFO di" +
+                     "  FROM STORE_INFO2 si, DEPSTORE_INFO2 di" +
                      " WHERE si.DEP_ID = di.DEP_ID" +
                      "   AND si.NAME REGEXP (" + searchStores + ")" +
                      "   AND di.DEP_ID IN (SELECT di.DEP_ID" +
-                     "                       FROM STORE_INFO si, DEPSTORE_INFO di" +
+                     "                       FROM STORE_INFO2 si, DEPSTORE_INFO2 di" +
                      "                      WHERE si.DEP_ID = di.DEP_ID" +
                      "                        AND si.NAME REGEXP (" + searchStores + ")" +
                      "                      GROUP BY di.NAME, di.BRANCH" +
@@ -112,7 +112,7 @@ public class StoreDao
                 {
                     StoreInfo storeInfo = new StoreInfo(
                               resultSet.getString("NAME")
-                            , resultSet.getString("FLOOR")
+                            , resultSet.getString("LEVEL")
                             , resultSet.getString("TEL")
                             , resultSet.getString("DEP_NAME")
                             , resultSet.getString("BRANCH")
