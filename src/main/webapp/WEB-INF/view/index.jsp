@@ -26,12 +26,12 @@
     <div class="container bs-docs-container">
         <div class="jumbotron">
             <h2>Stove</h2>
-            <h4>매장 검색</h4>
+            <h4>매장 검색 - 찾는 브랜드가 모두 있는 백화점 지점 찾기 (현재 롯데백화점만 검색 가능합니다)</h4>
         </div>
 
         <div class="form-group">
             <form:form action="search" method="POST" commandName="searchRequest">
-                <label class="sr-only" for="searchVal">매장검색 - 찾는 브랜드가 모두 있는 백화점 지점 찾기 (현재 롯데백화점만 검색 가능합니다)</label>
+                <label class="sr-only" for="searchVal">매장검색</label>
                 <input type="text" name="searchVal"  id="searchVal" value="${searchRequest.searchStores}" placeholder="검색 예시) 유니클로,자라,롯데리아" class="form-control">
                 <button type="submit" class="btn btn-success">Search</button>
             </form:form>
