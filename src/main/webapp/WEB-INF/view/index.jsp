@@ -31,8 +31,8 @@
 
         <div class="form-group">
             <form:form action="search" method="POST" commandName="searchRequest">
-                <label class="sr-only" for="searchVal">매장검색</label>
-                <input type="text" name="searchVal"  id="searchVal" value="${searchRequest.searchStores}" placeholder="검색 예시)   매장A, 매장B, 매장C" class="form-control">
+                <label class="sr-only" for="searchVal">매장검색 - 찾는 브랜드가 모두 있는 백화점 지점 찾기 (현재 롯데백화점만 검색 가능합니다)</label>
+                <input type="text" name="searchVal"  id="searchVal" value="${searchRequest.searchStores}" placeholder="검색 예시) 유니클로,자라,롯데리아" class="form-control">
                 <button type="submit" class="btn btn-success">Search</button>
             </form:form>
         </div>
