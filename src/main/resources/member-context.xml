@@ -18,9 +18,9 @@
         <property name="jdbcUrl" value="${jdbc.url}" />
         <property name="user" value="${jdbc.userid}"/>
         <property name="password" value="${jdbc.password}"/>
-        <property name="validationQuery" value="select 1" />
-        <property name="testWhileIdle" value="true" />
-        <property name="timeBetweenEvictionRunsMillis" value="1200000" /> <!-- 1200000 = 20분 -->
+        <property name="preferredTestQuery" value="select 1" />
+        <property name="testConnectionOnCheckin" value="true" />
+        <property name="idleConnectionTestPeriod" value="1200" /> <!-- 1200 = 20분 -->
     </bean>
 
 
