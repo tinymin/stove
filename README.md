@@ -22,7 +22,7 @@
 
 
 서비스 주소
-http://tinymin.asuscomm.com:8080/stove/index.do
+http://tinymin.asuscomm.com:1080/stove/index.do
 
 
 
